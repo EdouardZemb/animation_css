@@ -1,0 +1,44 @@
+.html {
+    height: 100%;
+}
+.body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 4rem;
+    height: 3rem;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.container__element1 {
+    background-color: white;
+    width: 1rem;
+    animation: test 0.5s linear alternate infinite;
+}
+
+.container__element2 {
+    background-color: white;
+    width: 1rem;
+    animation: test 0.5s linear 0.25s alternate infinite;
+}
+
+.container__element3 {
+    background-color: white;
+    width: 1rem;
+    animation: test 0.5s linear 0.5s alternate infinite;
+}
+
+@keyframes test {
+    from { height: 0; opacity: 0;}
+    to { height: 100%; opacity: 1; }
+}
